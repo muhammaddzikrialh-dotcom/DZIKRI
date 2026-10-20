@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad TKJ - Team Profile</title>
+    <style>
+        /* Pengaturan Dasar & Tema Dark Mode */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        /* Header / Banner Utama */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            border-bottom: 3px solid #3b82f6;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #3b82f6;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            font-style: italic;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Bagian Tentang Kami */
+        .about-section {
+            text-align: center;
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid #334155;
+        }
+
+        .about-section h2 {
+            color: #3b82f6;
+            margin-bottom: 15px;
+        }
+
+        /* Grid Kartu Anggota */
+        .squad-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Desain Kartu Anggota */
+        .member-card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
+        }
+
+        /* Foto/Avatar Anggota */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: #0f172a;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            border: 2px solid #3b82f6;
+        }
+
+        .member-card h3 {
+            font-size: 1.3rem;
+            color: #f8fafc;
+            margin-bottom: 5px;
+        }
+
+        .role {
+            font-size: 0.9rem;
+            color: #3b82f6;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .quote {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            font-style: italic;
+            border-top: 1px solid #334155;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SQUAD TKJ</h1>
+        <p>"Ping sukses, kabel lurus, masa depan terkonfigurasi dengan baik."</p>
+    </header>
+
+    <div class="container">
+        <!-- Tentang Kami -->
+        <section class="about-section">
+            <h2>About Our Squad</h2>
+            <p>Kami adalah sekumpulan siswa Teknik Komputer dan Jaringan yang siap mengonfigurasi jaringan lokal maupun jaringan masa depan. Dari crimping kabel LAN, setting router, hingga mengelola server, kami siap hadapi!</p>
+        </section>
+
+        <!-- Daftar Anggota -->
+        <section class="squad-grid">
+            
+            <!-- Anggota 1 -->
+            <div class="member-card">
+                <div class="avatar">👨‍💻</div>
+                <h3>Budi Jaringan</h3>
+                <div class="role">Network Engineer</div>
+                <p class="quote">"Hidup itu seperti IP Address, harus unik dan punya tujuan (Gateway)."</p>
+            </div>
+
+            <!-- Anggota 2 -->
+            <div class="member-card">
+                <div class="avatar">👩‍💻</div>
+                <h3>Siti Admin</h3>
+                <div class="role">Server Administrator</div>
+                <p class="quote">"Jangan biarkan hatimu terkena Request Time Out (RTO)."</p>
+            </div>
+
+            <!-- Anggota 3 -->
+            <div class="member-card">
+                <div class="avatar">👨‍💻</div>
+                <h3>Andi Cyber</h3>
+                <div class="role">Security Analyst</div>
+                <p class="quote">"Mengamankan jaringan itu hobi, mengamankan kamu itu kewajiban."</p>
+            </div>
+
+            <!-- Anggota 4 -->
+            <div class="member-card">
+                <div class="avatar">👩‍💻</div>
+                <h3>Rani Crimping</h3>
+                <div class="role">Hardware Specialist</div>
+                <p class="quote">"Kabel saja saya susun dengan rapi, apalagi masa depan kita."</p>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>
